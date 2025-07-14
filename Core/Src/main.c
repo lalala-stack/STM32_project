@@ -181,7 +181,7 @@ int main(void)
   uint32_t dacValue = (1.65f / 3.3f) * 4095;
   HAL_DAC_SetValue(&hdac, DAC_CHANNEL_1, DAC_ALIGN_12B_R, dacValue);
   
-//  AD9959_Set_Amplitude_Phase_Frequence(1, 900 ,0 ,15*MHz);
+  AD9959_Set_Amplitude_Phase_Frequence(0, 1000 ,0 ,20*MHz);
   
   HAL_Delay(10);
   IO_Update();
